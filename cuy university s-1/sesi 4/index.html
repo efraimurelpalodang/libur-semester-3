@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMPU</title>
+</head>
+<body>
+    <img src="asets/images/off.gif" alt="Gambar Lampu" id="lampu">
+    <h1>CETREKAN LAMPU</h1>
+    <button onclick="saklar()">NYALAKAN LAMPU</button>
+
+    <!-- ini adalah script -->
+    <script>
+        function saklar() {
+            console.log("Testing saklarnya");
+            const lampu = document.getElementById('lampu');
+            console.log(lampu.src);
+            lampu.src = 'asets/images/on.gif';
+            
+        }
+    </script>
+</body>
+</html>
