@@ -1,0 +1,26 @@
+section {
+  min-height: 460px;
+}
+.jumbotron img {
+  width: 200px;
+}
+.jumbotron h1.nama {
+  text-shadow: 2px 2px 10px black;
+}
+.jumbotron h3 {
+  text-shadow: 2px 2px 10px rgb(44, 41, 41);
+}
+.about hr,
+.portfolio hr {
+  width: 180px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.portfolio hr {
+  border-color: white;
+}
+.portfolio a img {
+  margin-top: .5em;
+}
