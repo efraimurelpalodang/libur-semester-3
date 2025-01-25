@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Latihan Jquery</title>
+    <style>
+        #kotak,
+        .lingkaran {
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .lingkaran {
+            border-radius: 50%;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div id="kotak"></div>
+    <div class="lingkaran"></div>
+    <div class="lingkaran"></div>
+
+    <script>
+        $('.lingkaran').click(function() {
+            alert('Ini adalah kotak');
+        });
+    </script>
+</body>
+</html>

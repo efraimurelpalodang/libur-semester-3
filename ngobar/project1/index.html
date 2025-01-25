@@ -9,9 +9,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5 fw-semibold me-5">
+            <li class="nav-item me-4">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
     
     <!-- jumbotron start -->
-    <div class="py-5 bg-secondary jumbotron">
+    <div class="py-5 bg-secondary jumbotron mt-5">
       <div class="container text-center text-light">
         <img src="img/profil.jpg" class="img-thumbnail shadow rounded-circle object-fit-cover" alt="profil">
         <h1 class="pt-4 nama">Efraim urel palodang</h1>
@@ -83,6 +110,66 @@
       </div>
     </section>
     <!-- portfolio end -->
+
+    <!-- contact start -->
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-sm-12">
+            <h1 class="text-center">Contact</h1> <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <form action="">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="masukkan nama">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="telp" class="form-label">Nomor</label>
+                <input type="tel" class="form-control" id="telp" placeholder="masukkan nomor telepon">
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>pilih...</option>
+                  <option value="1">Web Design</option>
+                  <option value="2">Web Developer</option>
+                  <option value="3">Fullstack</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="komentar" class="form-label">Komentar</label>
+                <textarea class="form-control" id="komentar" rows="3" placeholder="Masukkan pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">kirim pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-secondary">
+      <div class="container text-center py-4">
+        <div class="row">
+          <div class="col-sm-12 text-light fs-5">
+            <p>&copy;Copyright 2025 buildin By <a href="#" class="text-warning text-decoration-none">Efraim urel palodang</a>.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#" class="btn btn-danger fw-semibold">SUBSCRIBE</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

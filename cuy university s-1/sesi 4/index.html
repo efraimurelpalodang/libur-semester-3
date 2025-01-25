@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tallwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>LAMPU</title>
 </head>
 <body>
-    <img src="asets/images/off.gif" alt="Gambar Lampu" id="lampu">
-    <h1>CETREKAN LAMPU</h1>
-    <button onclick="saklar()">NYALAKAN LAMPU</button>
+    <div class="pure-g">
+        <!-- lampu 1 -->
+        <div class="pure-u-1 pure-u-md-1-3">
+            <img src="asets/images/off.gif" alt="Gambar Lampu" id="lampu1">
+            <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')">MATIKAN LAMPU</button>
+        </div>
+        <!-- lampu 2 -->
+        <div class="pure-u-1 pure-u-md-1-3">
+            <img src="asets/images/off.gif" alt="Gambar Lampu" id="lampu2">
+            <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')">MATIKAN LAMPU</button>
+        </div>
+        <!-- lampu 3 -->
+        <div class="pure-u-1 pure-u-md-1-3">
+            <img src="asets/images/off.gif" alt="Gambar Lampu" id="lampu2">
+            <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')">MATIKAN LAMPU</button>
+        </div>
 
-    <!-- ini adalah script -->
-    <script>
-        function saklar() {
-            console.log("Testing saklarnya");
-            const lampu = document.getElementById('lampu');
-            console.log(lampu.src);
-            lampu.src = 'asets/images/on.gif';
-            
-        }
-    </script>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
